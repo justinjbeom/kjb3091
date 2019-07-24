@@ -1,0 +1,20 @@
+Meta Learning Model Agnostic은 Gradient Descent로 Training되고 다양한 Model과 호환된다. 예를들면 적은 수의 Sample로도 새로운 학습을 할 수 있다. 적은 수의 학습 Data로 Gradient로 일반화 성능 도출 할 수 있다. 
+
+1. Introduction
+ Data를 새로운 Data와 통합해야하고 Data에 과도하게 적용하지 않아야하므로 인해 신속하고 정확한 학습이 어렵다. 또한 사전 경험과 새로운 Data의 형태에 따라 달라진다. 따라서 Meta Learning에 대한 주제 설정은 일반적이어야 한다.
+ Gradient Descent Procesure로 Training 된 학습을 Model에 적용 할 수 있는 것이 일반적이며 Model에 구애를 받지 않는것이 Meta Learning Algorithm이다.
+Meta Learning은 작은 수의 새로운 Data로 부터 새로운 학습을 빠르게 배우는 것이고 Model은 다양한 작업을 배울 수 있는 Meta 학습에 의해 Training이 된다. 모델의 초기 매개 변수를 조정하여 색 작업의 작은 수의 Data로 연산된 하나 이상의 Gradient Descent를 통해 변수가 Update된 후 모델이 새로운 작업에 최대 성능을 낼 수 있도록 하는 것이다.
+쉽고 빠르게 미세 조정할 수 있는 모델을 최적화하고 학습으 가능하게 한다. 학습 과정은 매개 변수와 과년하여 새로운 학습의 민감도를 최대화 하는 것으로 작업 손실이 크게 향상되었다.
+
+2. Model Agnostic Meta Learning
+ Meta Learning의 목표는 적은 Data와 반복 학습을 통해 모든 작업을 수행하는 Model을 학습 하는 것이다. 
+
+3. Species of MAML
+강화 학습을 위한 Meta Learning 학습 알고리즘을 논의한다. 도메인은 손실 함수의 형태와 작업에 의해 Data가 생성되어 모델에 제공하는 방식이 다르지만 모두 동일한 기본적인 메커니즘을 적용 할 수 있다.
+이전에 많은 Data의 Object를 사용하는 Model사용하여 Segway의 예를 하나 또는 몇가지만 보고 Segway의 이미지를 분류 하였다. 마찬가지로 몇번의 회귀 분석에서 목표는 유사한 통계적 특성을 가진 함수를 학습 한 후에 샘플링된 소수의 Data에서 연속 값의 함수를 출력을 예측 하는 것이다.
+
+5. 실험평가 질문
+ 1) MAML은 새로운 과제의 빠른 학습을 가능하게 하는가>
+ 2) MAML을 회귀, 분류, 강화학습을 포함하여 Meta Learning을 할 수 있는가?
+ 3) 추가적인 Gradient Update 및 예제가 있으면 계속해서 성능을 향상 할 수 있는가?
+
